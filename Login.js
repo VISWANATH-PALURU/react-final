@@ -24,7 +24,7 @@ const Login = () => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          "https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json "
+          "https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json"
         );
         localStorage.setItem(
           "accountsPage",
