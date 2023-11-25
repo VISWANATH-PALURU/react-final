@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Account from "../account/Account";
-import Dashboard from "../dashboard/Dashboard";
-import Login from "../login/Login";
-import Products from "../products/Products";
+import Account from "./Account";
+import Dashboard from "./Dashboard";
+import Login from "./Login";
+import Products from "./Products";
 const appRoutes = () => {
   return (
     <Routes>
