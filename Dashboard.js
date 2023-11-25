@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import OrdersList from "./OrdersList";
 import NotificationList from "./NotificationList";
 import styles from "./Dashboard.module.css";
-import PieChart from "./Charts/PieChart";
-import LineChart from "./Charts/LineChart";
-import HorizontalChart from "./Charts/HorizontalChart";
+import PieChart from "./PieChart";
+import LineChart from "./LineChart";
+import HorizontalChart from "./HorizontalChart";
 
 const Dashboard = () => {
   let localPerformance = JSON.parse(localStorage.getItem("dashboardPage"))[
