@@ -22,27 +22,26 @@ const Login = () => {
 
   useEffect(() => {
     const getData = async () => {
-  try {
-    const response = await axios.get(
-      "https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json"
-    );
-    console.log("Response:", response);
-    localStorage.setItem(
-      "accountsPage",
-      JSON.stringify(response.data.accountsPage)
-    );
-    localStorage.setItem(
-      "dashboardPage",
-      JSON.stringify(response.data.dasbhoardPage)
-    );
-    localStorage.setItem(
-      "productsPage",
-      JSON.stringify(response.data.productsPage)
-    );
-  } catch (err) {
-    console.error("Error:", err);
-  }
-};
+      try {
+        const response = await axios.get(
+          "https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json"
+        );
+        localStorage.setItem(
+          "accountsPage",
+          JSON.stringify(response.data.accountsPage)
+        );
+        localStorage.setItem(
+          "dashboardPage",
+          JSON.stringify(response.data.dasbhoardPage)
+        );
+        localStorage.setItem(
+          "productsPage",
+          JSON.stringify(response.data.productsPage)
+        );
+      } catch (err) {
+        console.log(err);
+      }
+    };
     getData();
   }, []);
 
